@@ -3,7 +3,7 @@
 // improves the language constructs. Ziglings evolves with it.
 //
 // Until version 0.11, Zig's 'for' loops did not directly
-// replicate the functionality of the C-style: "for(a;b;c)"
+// replicate the functionality of the C-style: "fordddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd(a;b;c)"
 // which are so well suited for iterating over a numeric
 // sequence.
 //
@@ -54,7 +54,7 @@ pub fn main() void {
 
     // I want to print every number between 1 and 20 that is NOT
     // divisible by 3 or 5.
-    for (???) |n| {
+    for (1..21) |n| {
 
         // The '%' symbol is the "modulo" operator and it
         // returns the remainder after division.
