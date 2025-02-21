@@ -33,7 +33,7 @@ pub fn main() !void {
     // initalize an array of u8 with all letter 'A'
     // we need to pick the size of the array, 64 seems like a good number
     // fix the initalization below
-    var content = ['A']*64;
+    var content: [64]u8 = .{'A'} ** 64;
     // this should print out : `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`
     std.debug.print("{s}\n", .{content});
 
@@ -47,6 +47,6 @@ pub fn main() !void {
     // Can you print only what we read from the file?
     std.debug.print("Successfully Read {d} bytes: {s}\n", .{
         bytes_read,
-        content, // change this line only
+        content[0..bytes_read], // change this line only
     });
 }
